@@ -19,6 +19,6 @@ fi
 
 # Install pnpm and bun globally
 npm install -g pnpm
-npm install -g bun
+curl -fsSL https://bun.sh/install | bash
 
 echo "Installation completed."

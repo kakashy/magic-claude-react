@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Install packages
+# pnpm --prefer-offline install
+bun install
+
 # Function to extract package names from import statements
 extract_packages() {
   grep -hoP "import.*?from\s+[\'\"]\K([^\'\"]+)" "$1" | grep -vE '^(./|@/)'
